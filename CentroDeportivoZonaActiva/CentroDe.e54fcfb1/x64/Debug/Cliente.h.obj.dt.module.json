@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CentroDe.e54fcfb1\\x64\\Debug\\Cliente.obj",
+            "outputs": [
+                "CentroDe.e54fcfb1\\x64\\Debug\\Cliente.h.obj.dt.module.json",
+                "CentroDe.e54fcfb1\\x64\\Debug\\Cliente.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

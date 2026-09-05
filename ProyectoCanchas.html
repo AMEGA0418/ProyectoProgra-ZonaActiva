@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagrama de Clases - Zona Activa</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;600&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0b0f1a;
+    --surface: #111827;
+    --border: #1e2d40;
+    --accent: #00d4aa;
+    --accent2: #3b82f6;
+    --text: #e2e8f0;
+    --muted: #64748b;
+    --header-bg: #0f1c2e;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  /* Subtle grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,212,170,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,212,170,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo-mark {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0b0f1a;
+    flex-shrink: 0;
+    box-shadow: 0 0 24px rgba(0,212,170,0.3);
+  }
+
+  .header-text h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+
+  .header-text p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+  }
+
+  .badges {
+    margin-left: auto;
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    border: 1px solid;
+  }
+
+  .badge-green  { border-color: var(--accent);  color: var(--accent);  background: rgba(0,212,170,0.08); }
+  .badge-blue   { border-color: var(--accent2); color: var(--accent2); background: rgba(59,130,246,0.08); }
+
+  /* Legend */
+  .legend {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  .legend-line {
+    width: 28px;
+    height: 2px;
+  }
+
+  .legend-line.solid     { background: #94a3b8; }
+  .legend-line.dashed    { background: repeating-linear-gradient(90deg,#94a3b8 0,#94a3b8 4px,transparent 4px,transparent 8px); }
+  .legend-line.green     { background: var(--accent); }
+  .legend-line.blue      { background: var(--accent2); }
+
+  /* Diagram card */
+  .diagram-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    overflow-x: auto;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.4);
+  }
+
+  .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Override mermaid SVG text colors for dark theme */
+  .mermaid svg {
+    background: transparent !important;
+  }
+
+  /* Info footer */
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .info-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    border-left: 3px solid var(--accent);
+  }
+
+  .info-card h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-card ul {
+    list-style: none;
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .info-card ul li::before {
+    content: '- ';
+    color: var(--accent);
+    font-family: 'Space Mono', monospace;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <div class="logo-mark">ZA</div>
+    <div class="header-text">
+      <h1>Zona Activa — Diagrama de Clases</h1>
+      <p>EIF-201 Programacion I · Universidad Nacional · Proyecto I</p>
+    </div>
+    <div class="badges">
+      <span class="badge badge-green">C++ OOP</span>
+      <span class="badge badge-blue">UML 2.5</span>
+    </div>
+  </header>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-line solid"></div> Asociacion</div>
+    <div class="legend-item"><div class="legend-line green"></div> Composicion (parte de)</div>
+    <div class="legend-item"><div class="legend-line blue"></div> Agregacion</div>
+    <div class="legend-item"><div class="legend-line dashed"></div> Dependencia</div>
+  </div>
+
+  <div class="diagram-card">
+    <div class="mermaid">
+classDiagram
+    direction TB
+
+    class FranjaHoraria {
+        -int numero
+        -string estado
+        +FranjaHoraria()
+        +getNumero() int
+        +getEstado() string
+        +setEstado(string) void
+        +estaLibre() bool
+    }
+
+    class Cancha {
+        -int id
+        -string nombre
+        -string deporte
+        -FranjaHoraria franjas[12]
+        +Cancha()
+        +getId() int
+        +getNombre() string
+        +getDeporte() string
+        +getFranja(int) FranjaHoraria*
+        +setEstadoFranja(int, string) void
+        +mostrarDisponibilidad() void
+    }
+
+    class Cliente {
+        -int id
+        -string nombre
+        -string telefono
+        -string correo
+        +Cliente()
+        +getId() int
+        +getNombre() string
+        +getTelefono() string
+        +getCorreo() string
+        +mostrarInfo() void
+    }
+
+    class Reserva {
+        -int id
+        -Cliente* cliente
+        -Cancha* cancha
+        -int numeroFranja
+        -string fecha
+        +Reserva()
+        +getId() int
+        +getCliente() Cliente*
+        +getCancha() Cancha*
+        +getNumeroFranja() int
+        +mostrarInfo() void
+    }
+
+    class ListaEspera {
+        -Cliente* espera[10]
+        -int* canchasSolicitadas[10]
+        -int* franjasSolicitadas[10]
+        -int cantidad
+        +ListaEspera()
+        +agregar(Cliente*, int, int) bool
+        +eliminar(int) void
+        +promover(GestorReservas*) bool
+        +mostrar() void
+        +getCantidad() int
+    }
+
+    class GestorCanchas {
+        -Cancha* canchas[10]
+        -int total
+        +GestorCanchas()
+        +agregar(Cancha*) bool
+        +eliminar(int) bool
+        +buscar(int) Cancha*
+        +listar() void
+        +setMantenimiento(int, int) void
+        +getCantidad() int
+    }
+
+    class GestorClientes {
+        -Cliente* clientes[100]
+        -int total
+        +GestorClientes()
+        +agregar(Cliente*) bool
+        +eliminar(int) bool
+        +buscar(int) Cliente*
+        +listar() void
+        +getCantidad() int
+    }
+
+    class GestorReservas {
+        -Reserva* reservas[120]
+        -int total
+        +GestorReservas()
+        +crear(Cliente*, Cancha*, int) bool
+        +cancelar(int) bool
+        +buscar(int) Reserva*
+        +listarPorCliente(int) void
+        +listarPorCancha(int) void
+        +getCantidad() int
+    }
+
+    class Reportes {
+        +generarOcupacion(GestorCanchas*) void
+        +generarReservasPorCliente(GestorClientes*, GestorReservas*) void
+        +generarResumenDiario(GestorReservas*) void
+        +generarListaEspera(ListaEspera*) void
+    }
+
+    class SistemaZonaActiva {
+        -GestorCanchas* gestorCanchas
+        -GestorClientes* gestorClientes
+        -GestorReservas* gestorReservas
+        -ListaEspera* listaEspera
+        -Reportes* reportes
+        -string fecha
+        +SistemaZonaActiva()
+        +~SistemaZonaActiva()
+        +iniciar() void
+        +menuPrincipal() void
+        +menuCanchas() void
+        +menuClientes() void
+        +menuReservas() void
+        +menuReportes() void
+    }
+
+    %% Composicion: Cancha CONTIENE FranjaHoraria
+    Cancha *-- FranjaHoraria : contiene 12
+
+    %% Composicion: GestorCanchas administra Canchas
+    GestorCanchas *-- Cancha : gestiona
+
+    %% Composicion: GestorClientes administra Clientes
+    GestorClientes *-- Cliente : gestiona
+
+    %% Composicion: GestorReservas administra Reservas
+    GestorReservas *-- Reserva : gestiona
+
+    %% Asociacion: Reserva referencia a Cliente y Cancha
+    Reserva --> Cliente : pertenece a
+    Reserva --> Cancha : ocupa
+
+    %% Agregacion: ListaEspera referencia Clientes
+    ListaEspera o-- Cliente : referencia
+
+    %% Composicion: Sistema contiene a los gestores
+    SistemaZonaActiva *-- GestorCanchas
+    SistemaZonaActiva *-- GestorClientes
+    SistemaZonaActiva *-- GestorReservas
+    SistemaZonaActiva *-- ListaEspera
+    SistemaZonaActiva *-- Reportes
+
+    %% Dependencia: Reportes usa los gestores
+    Reportes ..> GestorCanchas : usa
+    Reportes ..> GestorClientes : usa
+    Reportes ..> GestorReservas : usa
+    Reportes ..> ListaEspera : usa
+
+    %% Dependencia: ListaEspera usa GestorReservas
+    ListaEspera ..> GestorReservas : promueve a
+    </div>
+  </div>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <h3>Limites del Sistema</h3>
+      <ul>
+        <li>Max 10 canchas</li>
+        <li>Max 100 clientes</li>
+        <li>Max 120 reservas</li>
+        <li>Max 10 en lista de espera</li>
+        <li>12 franjas horarias por cancha</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Estados de Franja</h3>
+      <ul>
+        <li>Libre</li>
+        <li>Ocupada</li>
+        <li>Mantenimiento</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Restricciones Tecnicas</h3>
+      <ul>
+        <li>Sin contenedores STL</li>
+        <li>Solo arreglos unidimensionales</li>
+        <li>Punteros y memoria dinamica</li>
+        <li>Aplicacion de consola</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Modulos Principales</h3>
+      <ul>
+        <li>Gestion de Canchas</li>
+        <li>Gestion de Clientes</li>
+        <li>Gestion de Reservas</li>
+        <li>Lista de Espera</li>
+        <li>Reportes</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    themeVariables: {
+      darkMode: true,
+      background: '#111827',
+      primaryColor: '#1e2d40',
+      primaryTextColor: '#e2e8f0',
+      primaryBorderColor: '#00d4aa',
+      lineColor: '#64748b',
+      secondaryColor: '#0f1c2e',
+      tertiaryColor: '#0b0f1a',
+      noteBkgColor: '#1e2d40',
+      noteTextColor: '#e2e8f0',
+      classBorder: '#00d4aa',
+      classText: '#e2e8f0',
+      fillType0: '#1e2d40',
+      edgeLabelBackground: '#111827',
+      fontFamily: 'Space Mono, monospace',
+      fontSize: '13px'
+    },
+    classDiagram: {
+      diagramPadding: 20
+    }
+  });
+</script>
+</body>
+</html>
