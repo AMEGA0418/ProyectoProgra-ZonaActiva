@@ -25,7 +25,7 @@ public:
 	int getID() const { return id; }
 	string getNombre() const { return nombre; }
 	string getTelefono() const { return telefono; }
-	string getCorreo() const { return telefono; }
+	string getCorreo() const { return correo; }
 	//Setter
 	void setID(int nuevoID) { id = nuevoID;}
 	void setNombre(string nuevoNombre) { nombre = nuevoNombre; }
@@ -39,7 +39,6 @@ public:
 		cout << "Telefono: " << getTelefono() << endl;
 		cout << "Correo: " << getCorreo() << endl;
 
-	}
 	}
 };
 
