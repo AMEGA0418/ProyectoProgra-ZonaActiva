@@ -12,7 +12,7 @@ private:
 	int ID;
 	Cliente * cliente;
 	Cancha* cancha;
-	int numeroFranja;
+	int numeroFranja;//Dudas
 	string fecha;
 public:
 	//Constructores
