@@ -141,11 +141,9 @@
   <ItemGroup>
     <ClCompile Include="CentroDeportivoZonaActiva.cpp" />
     <ClCompile Include="Cliente.cpp" />
-    <ClCompile Include="GestorClientes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cliente.h" />
-    <ClInclude Include="GestorClientes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
