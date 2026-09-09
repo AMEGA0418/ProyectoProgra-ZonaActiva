@@ -2,8 +2,6 @@
 #include <iostream>
 #include <string>
 #include "Reserva.h"
-#include "Cliente.h"
-#include "Cancha.h"
 
 using namespace std;
 
