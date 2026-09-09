@@ -1,0 +1,33 @@
+﻿#pragma once
+#include <iostream>
+#include <string>
+#include "Reserva.h"
+
+using namespace std;
+
+class GestorReservas{
+private:
+	Reserva * reservas[120];
+	int total;
+public:
+	GestorReservas();
+	bool crearReserva(Cliente* cliente, Cancha* cancha, int numeroFranja) {
+	
+	}
+	bool cancelarReserva(int id) {
+	
+	}
+	Reserva buscarReserva(int id) {
+	
+	}
+	void listarReservasPorCliente(int idCliente) {
+	
+	}
+	void listarReservasPorCancha(int idCancha) {
+	
+	}
+	int getCantidadDeReservas() {
+	
+	}
+};
+

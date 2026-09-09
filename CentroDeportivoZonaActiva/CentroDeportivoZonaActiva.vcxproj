@@ -139,11 +139,29 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cancha.cpp" />
     <ClCompile Include="CentroDeportivoZonaActiva.cpp" />
     <ClCompile Include="Cliente.cpp" />
+    <ClCompile Include="FranjaHoraria.cpp" />
+    <ClCompile Include="GestorCanchas.cpp" />
+    <ClCompile Include="GestorClientes.cpp" />
+    <ClCompile Include="GestorReservas.cpp" />
+    <ClCompile Include="ListaEspera.cpp" />
+    <ClCompile Include="Reportes.cpp" />
+    <ClCompile Include="Reserva.cpp" />
+    <ClCompile Include="SistemaZonaActiva.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cancha.h" />
     <ClInclude Include="Cliente.h" />
+    <ClInclude Include="FranjaHoraria.h" />
+    <ClInclude Include="GestorCanchas.h" />
+    <ClInclude Include="GestorClientes.h" />
+    <ClInclude Include="GestorReservas.h" />
+    <ClInclude Include="ListaEspera.h" />
+    <ClInclude Include="Reportes.h" />
+    <ClInclude Include="Reserva.h" />
+    <ClInclude Include="SistemaZonaActiva.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
