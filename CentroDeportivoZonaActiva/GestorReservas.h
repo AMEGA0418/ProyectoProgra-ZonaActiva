@@ -86,7 +86,7 @@ public:
 			Cancha* c = reservas[i]->getCancha();
 			if (c != nullptr) {
 				//sale error, porque aun no esta la clase cancha ni el metodo: getID()
-				if (c->getID() == idCancha) {
+				if (c->getId() == idCancha) {
 					reservas[i]->mostrarInfo();
 					encontro = true;
 				}

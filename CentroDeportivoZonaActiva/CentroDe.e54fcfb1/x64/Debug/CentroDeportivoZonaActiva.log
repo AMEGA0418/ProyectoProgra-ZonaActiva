@@ -1,0 +1,15 @@
+﻿  Cancha.cpp
+  CentroDeportivoZonaActiva.cpp
+  Cliente.cpp
+  FranjaHoraria.cpp
+  GestorCanchas.cpp
+  GestorClientes.cpp
+C:\Users\MEGA0418\Documents\Maria Emilia Gamboa Abarca\Programación\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\GestorCanchas.h(12,21): error C1075: "{": no se encontró ningún token coincidente
+  (compilando archivo de origen "GestorCanchas.cpp")
+  
+  GestorReservas.cpp
+  ListaEspera.cpp
+  Reportes.cpp
+  Reserva.cpp
+  SistemaZonaActiva.cpp
+  Generando código...
