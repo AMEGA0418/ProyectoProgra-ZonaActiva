@@ -25,16 +25,44 @@ public:
 		this->fecha = fecha;
 	}
 	//Getters y Setters
-	int getId() const { return ID; }
-	Cliente* getCliente() const { return cliente; }
-	Cancha* getCancha() const { return cancha; }
-	int getNumeroFranja() const { return numeroFranja; }
-	string getFecha() const { return fecha; }
-	void setId(int nuevoID) { ID = nuevoID; }
-	void setCliente(Cliente* nuevoCliente) { cliente = nuevoCliente; }
-	void setCancha(Cancha* nuevaCancha) { cancha = nuevaCancha; }
-	void setNumeroFranja(int nuevaFranja) { numeroFranja = nuevaFranja; }
-	void setFecha(string nuevaFecha) { fecha = nuevaFecha; }
+	int getId() const { 
+		return ID; 
+	}
+
+	Cliente* getCliente() const { 
+		return cliente; 
+	}
+	Cancha* getCancha() const { 
+		return cancha; 
+	}
+
+	int getNumeroFranja() const { 
+		return numeroFranja; 
+	}
+
+	string getFecha() const { 
+		return fecha; 
+	}
+
+	void setId(int nuevoID) { 
+		ID = nuevoID; 
+	}
+
+	void setCliente(Cliente* nuevoCliente) { 
+		cliente = nuevoCliente; 
+	}
+
+	void setCancha(Cancha* nuevaCancha) { 
+		cancha = nuevaCancha; 
+	}
+
+	void setNumeroFranja(int nuevaFranja) { 
+		numeroFranja = nuevaFranja; 
+	}
+
+	void setFecha(string nuevaFecha) { 
+		fecha = nuevaFecha; 
+	}
 
 	//Metodos de clase
 	void mostrarInfo() const {

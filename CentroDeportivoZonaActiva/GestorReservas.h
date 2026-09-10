@@ -25,23 +25,28 @@ public:
 				this->reservas[i] = nullptr;
 			}
 	}
+
 	//Metodos de clase
-	bool crearReserva(Cliente* cliente, Cancha* cancha, int numeroFranja) {
-		if (cliente == nullptr || cancha == nullptr || numeroFranja <= 0) return false;
+	bool crear(Cliente* cliente, Cancha* cancha, int franjaInicial,
+		int cantidadFranjas, string fecha) {
+		// Validaciones básicas
 		if (total >= 120) return false;
+		if (cliente == nullptr || cancha == nullptr) return false;
+
+		// Crear una reserva simple usando la estructura Reserva existente
 		int id = total + 1;
-		reservas[total] = new Reserva(id, cliente, cancha, numeroFranja, "");
+		reservas[total] = new Reserva(id, cliente, cancha, franjaInicial, fecha);
 		total++;
 		return true;
 	}
-	bool cancelarReserva(int id) {
+
+	bool cancelar(int numeroReserva) {
+		// Buscar y eliminar la reserva por su numero
 		for (int i = 0; i < total; i++) {
-			if (reservas[i] != nullptr && reservas[i]->getId() == id) {
+			if (reservas[i] != nullptr && reservas[i]->getId() == numeroReserva) {
 				delete reservas[i];
-				// desplazar el resto hacia la izquierda
-				for (int j = i; j < total - 1; j++) {
-					reservas[j] = reservas[j + 1];
-				}
+				// desplazar hacia la izquierda
+				for (int j = i; j < total - 1; j++) reservas[j] = reservas[j + 1];
 				reservas[total - 1] = nullptr;
 				total--;
 				return true;
@@ -49,41 +54,50 @@ public:
 		}
 		return false;
 	}
-	Reserva buscarReserva(int id) {
+
+	Reserva* buscar(int numeroReserva) const {
 		for (int i = 0; i < total; i++) {
-			if (reservas[i] != nullptr && reservas[i]->getId() == id) {
-				return *reservas[i];
+			if (reservas[i] != nullptr && reservas[i]->getId() == numeroReserva) {
+				return reservas[i];
 			}
 		}
-		return Reserva();
+		return nullptr;
 	}
-	void listarReservasPorCliente(int idCliente) {
-		bool encontrado = false;
-		cout << "Reservas del cliente con ID " << idCliente << ":" << endl;
+
+	void listarPorCliente(int idCliente) const {
+		bool encontro = false;
 		for (int i = 0; i < total; i++) {
-			if (reservas[i] != nullptr && reservas[i]->getCliente() != nullptr && reservas[i]->getCliente()->getID() == idCliente) {
+			if (reservas[i] == nullptr) continue;
+			Cliente* c = reservas[i]->getCliente();
+			if (c != nullptr && c->getID() == idCliente) {
 				reservas[i]->mostrarInfo();
-				encontrado = true;
+				encontro = true;
 			}
 		}
-		if (!encontrado) {
-			cout << "No se encontraron reservas para el cliente." << endl;
+		if (!encontro) {
+			cout << "El cliente no tiene reservas registradas." << endl;
 		}
 	}
-	void listarReservasPorCancha(int idCancha) {
-		bool encontrado = false;
-		cout << "Reservas de la cancha con ID " << idCancha << ":" << endl;
+
+	void listarPorCancha(int idCancha) const {
+		bool encontro = false;
 		for (int i = 0; i < total; i++) {
-			if (reservas[i] != nullptr && reservas[i]->getCancha() != nullptr && reservas[i]->getCancha()->getID() == idCancha) {
-				reservas[i]->mostrarInfo();
-				encontrado = true;
+			if (reservas[i] == nullptr) continue;
+			Cancha* c = reservas[i]->getCancha();
+			if (c != nullptr) {
+				//sale error, porque aun no esta la clase cancha ni el metodo: getID()
+				if (c->getID() == idCancha) {
+					reservas[i]->mostrarInfo();
+					encontro = true;
+				}
 			}
 		}
-		if (!encontrado) {
-			cout << "No se encontraron reservas para la cancha." << endl;
+		if (!encontro) {
+			cout << "La cancha no tiene reservas registradas." << endl;
 		}
 	}
-	int getCantidadDeReservas() {
+
+	int getCantidad() const {
 		return total;
 	}
 };

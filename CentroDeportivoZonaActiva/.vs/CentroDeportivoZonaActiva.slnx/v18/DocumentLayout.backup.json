@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\MEGA0418\\Documents\\Maria Emilia Gamboa Abarca\\Programaci\u00F3n\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\MEGA0418\\Documents\\Maria Emilia Gamboa Abarca\\Programaci\u00F3n\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reserva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Reserva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\MEGA0418\\Documents\\Maria Emilia Gamboa Abarca\\Programaci\u00F3n\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorReservas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:GestorReservas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\MEGA0418\\Documents\\Maria Emilia Gamboa Abarca\\Programaci\u00F3n\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reserva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Reserva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\MEGA0418\\Documents\\Maria Emilia Gamboa Abarca\\Programaci\u00F3n\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cliente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,32 +22,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Reserva.h",
               "DocumentMoniker": "C:\\Users\\MEGA0418\\Documents\\Maria Emilia Gamboa Abarca\\Programaci\u00F3n\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reserva.h",
               "RelativeDocumentMoniker": "Reserva.h",
               "ToolTip": "C:\\Users\\MEGA0418\\Documents\\Maria Emilia Gamboa Abarca\\Programaci\u00F3n\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reserva.h",
               "RelativeToolTip": "Reserva.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-09T20:58:05.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GestorReservas.h",
               "DocumentMoniker": "C:\\Users\\MEGA0418\\Documents\\Maria Emilia Gamboa Abarca\\Programaci\u00F3n\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorReservas.h",
               "RelativeDocumentMoniker": "GestorReservas.h",
               "ToolTip": "C:\\Users\\MEGA0418\\Documents\\Maria Emilia Gamboa Abarca\\Programaci\u00F3n\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorReservas.h",
               "RelativeToolTip": "GestorReservas.h",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-09T20:57:59.435Z"
+              "WhenOpened": "2026-09-09T20:57:59.435Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -59,7 +60,8 @@
               "RelativeToolTip": "Cliente.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-05T22:34:11.919Z"
+              "WhenOpened": "2026-09-05T22:34:11.919Z",
+              "EditorCaption": ""
             }
           ]
         }
