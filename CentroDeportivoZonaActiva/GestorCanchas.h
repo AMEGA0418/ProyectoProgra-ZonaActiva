@@ -85,4 +85,17 @@ public:
         else {
             cout << "Cancha no encontrada." << endl;
         }
+
+		//Este nuevo metodo permite que otras clases consulten sobre el estado
+        // de una franja de una cancha
+
+         Cancha* getCancha(int indice) {
+          if (indice >= 0 && indice < total) {
+            return canchas[indice];
+            }
+
+            return nullptr;
+        }
+
+
     }

@@ -30,6 +30,9 @@ public:
 		this->id = id;
 		this->nombre = nombre;
 		this->deporte = deporte;
+		for (int i = 0; i < 12; i++) {
+			franjas[i] = FranjaHoraria(i, "L");
+		}
 	}
 	//Encapsuladores
 
@@ -51,10 +54,10 @@ public:
 	void setDeporte(string nuevoDeporte) {
 		deporte = nuevoDeporte;
 	}
-	FranjaHoraria getFranja(int indice) {
+	FranjaHoraria getEstadoFranja(int indice) {
 		return franjas[indice];
 	}
-	void setFranja(int indice, string nuevoEstado) {
+	void setEstadoFranja(int indice, string nuevoEstado) {
 		if (indice >= 0 && indice < 12) {
 			franjas[indice].setEstado(nuevoEstado);
 		}
