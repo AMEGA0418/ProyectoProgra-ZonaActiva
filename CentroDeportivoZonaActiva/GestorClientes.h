@@ -82,5 +82,12 @@ public:
 	int getCantidad() {
 		return total;
 	}
+	Cliente* getCliente(int indice) {
+		if (indice >= 0 && indice < total) {
+			return clientes[indice];
+		}
+
+		return nullptr;
+	}
 };
 

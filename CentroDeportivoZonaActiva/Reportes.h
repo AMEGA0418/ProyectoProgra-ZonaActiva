@@ -34,7 +34,30 @@ public:
 
 	void GenerarReservasPorCliente(GestorClientes* gestorClientes, GestorReservas* gestorReservas) {
 
+		cout << "----RESERVAS POR CLIENTE----" << endl;
 
+		if (gestorClientes == nullptr) {
+			cout << "No hay gestor de clientes" << endl;
+			return;
+	}
+		if gestorClientes->getCantidad() == 0) {
+			cout << "No hay clientes registrados" << endl;
+			return;
+	}
+	for (int i = 0; i < gestorClientes->getCantidad(); i++) {
+
+		Cliente* cliente = gestorClientes->getCliente(i);
+
+		if (cliente != nullptr) {
+			cout << endl;
+			cout << "Cliente: " << cliente->getNombre() << endl;
+			cout << "ID: " << cliente->getId() << endl;
+			cout << "Reservas:" << endl;
+
+			gestorReservas->listarPorCliente(cliente->getId());
+
+			cout << "-------------------------" << endl;
+		}
 	}
 
 	void GenerarResumenDiario(GestorReservas* gestorReservas) {
@@ -57,7 +80,21 @@ public:
 	
 
 	void GenerarListaEspera(ListaEspera* listaEspera) {
+		cout << "----LISTA DE ESPERA----" << endl;
+		if (listaEspera == nullptr) {
+			cout << "No hay lista de espera" << endl;
+			return;
+		}
+		int cantidadEspera = listaEspera->getCantidad();
+		cout << "Cantidad de clientes en lista de espera: " << cantidadEspera << endl;
 
+		if (cantidadEspera == 0) {
+			cout << "No hay clientes en lista de espera" << endl;
+			return;
+		}
+		listaEspera->Mostrar();
 	}
+	
+
 };
 

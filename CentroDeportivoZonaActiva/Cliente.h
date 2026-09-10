@@ -40,5 +40,6 @@ public:
 		cout << "Correo: " << getCorreo() << endl;
 
 	}
+
 };
 

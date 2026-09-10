@@ -85,6 +85,7 @@ public:
 			cout << endl;
 		}
 	}
+	// Encapsulador
 	int getCantidad() {
 		return cantidad;
 	}
