@@ -15,13 +15,13 @@ public:
 	void GenerarOcupacion(GestorCanchas* gestorCanchas) {
 		int ocupacion = 0;
 
-		for (int i = 0; i < gestor->getCantidad(); i++) {
+		for (int i = 0; i < gestorCanchas->getCantidad(); i++) {
 
-			Cancha* cancha = gestor->getCancha(i);
+			Cancha* cancha = gestorCanchas->getCancha(i);
 
 			for (int j = 0; j < 12; j++) {
 
-				FranjaHoraria franja = cancha->getFranja(j);
+				FranjaHoraria franja = cancha->getEstadoFranja(j);
 
 				if (franja.getEstado() == "O") {
 					ocupacion++;
