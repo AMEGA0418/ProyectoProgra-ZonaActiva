@@ -8,7 +8,7 @@ using namespace std;
 class GestorReservas{
 	//Abtributos: Reserva* reservas[120], int total
 private:
-	Reserva * reservas[120];
+	Reserva* reservas[120];
 	int total;
 public:
 	//Constructores

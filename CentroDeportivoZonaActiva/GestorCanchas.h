@@ -7,7 +7,7 @@
 #include <iostream>
 #include <string>
 #include "Cancha.h"
-using namespace  std;
+using namespace std;
 
 class GestorCanchas {
 private:
@@ -22,11 +22,14 @@ public:
             canchas[i] = nullptr;
         }
     }
-    // Encapsulador 
+
+    // Encapsulador
     int getCantidad() {
         return total;
     }
-    //Metodos
+
+    // Metodos
+
     // Agregar una cancha (mientras haya espacio)
     bool agregar(Cancha* nuevaCancha) {
         if (total < 10) {
@@ -37,14 +40,14 @@ public:
         return false; // ya no hay espacio
     }
 
-    // Eliminar una cancha por posición
+    // Eliminar una cancha por posicion
     bool eliminar(int indice) {
         if (indice < 0 || indice >= total) {
-            return false; // índice inválido
+            return false; // indice invalido
         }
         delete canchas[indice]; // libera la memoria del puntero
 
-        // Recorremos el resto para "recorrer" el hueco
+        // Recorremos el resto para "correr" el hueco
         for (int i = indice; i < total - 1; i++) {
             canchas[i] = canchas[i + 1];
         }
@@ -53,7 +56,7 @@ public:
         return true;
     }
 
-    // Buscar una cancha por su código/id
+    // Buscar una cancha por su codigo/id
     Cancha* buscar(int id) {
         for (int i = 0; i < total; i++) {
             if (canchas[i]->getId() == id) {
@@ -85,17 +88,11 @@ public:
         else {
             cout << "Cancha no encontrada." << endl;
         }
-
-		//Este nuevo metodo permite que otras clases consulten sobre el estado
-        // de una franja de una cancha
-
-         Cancha* getCancha(int indice) {
-          if (indice >= 0 && indice < total) {
+    } 
+    Cancha* getCancha(int indice) {
+        if (indice >= 0 && indice < total) {
             return canchas[indice];
-            }
-
-            return nullptr;
         }
-
-
+        return nullptr;
     }
+};
