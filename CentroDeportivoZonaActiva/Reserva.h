@@ -1,77 +1,58 @@
+/*Universidad nacional 
+María Emilia Gamboa Abarca 
+Clase que representa una reserva de una cancha por parte de un cliente*/
+
 #pragma once
-#include <iostream>
 #include <string>
+#include <iostream>
 #include "Cliente.h"
 #include "Cancha.h"
 
 using namespace std;
 
-class Reserva{
-	//Atributos: int ID, Cliente* cliente, Cancha* cancha, int numeroFranja, string fecha
+class Reserva {
 private:
-	int ID;
-	Cliente * cliente;
+	int id;
+	Cliente* cliente;
 	Cancha* cancha;
-	int numeroFranja;//Dudas
+	int franjaInicial;      // posicion (0 a 11) de la primera franja reservada
+	int cantidadFranjas;    // cantidad de franjas consecutivas reservadas
 	string fecha;
+	double monto;           // precio por hora de la cancha * cantidadFranjas
+	string estado;          // "Activa" o "Cancelada"
+
 public:
 	//Constructores
-	Reserva() : ID(0), cliente(nullptr), cancha(nullptr), numeroFranja(0), fecha("") {}
-	Reserva(int ID, Cliente* cliente, Cancha* cancha, int numeroFranja, string fecha) : ID(ID), cliente(cliente), cancha(cancha), numeroFranja(numeroFranja), fecha(fecha) {
-		this->ID = ID;
-		this->cliente = cliente;
-		this->cancha = cancha;
-		this->numeroFranja = numeroFranja;
-		this->fecha = fecha;
-	}
-	//Getters y Setters
-	int getId() const { 
-		return ID; 
-	}
+	Reserva();
+	Reserva(int id, Cliente* cliente, Cancha* cancha, int franjaInicial,
+		int cantidadFranjas, string fecha, double monto);
 
-	Cliente* getCliente() const { 
-		return cliente; 
-	}
-	Cancha* getCancha() const { 
-		return cancha; 
-	}
+	//Getters
+	int getId() const;
+	Cliente* getCliente() const;
+	Cancha* getCancha() const;
+	int getFranjaInicial() const;
+	int getCantidadFranjas() const;
+	string getFecha() const;
+	double getMonto() const;
+	string getEstado() const;
+	bool estaActiva() const;
 
-	int getNumeroFranja() const { 
-		return numeroFranja; 
-	}
-
-	string getFecha() const { 
-		return fecha; 
-	}
-
-	void setId(int nuevoID) { 
-		ID = nuevoID; 
-	}
-
-	void setCliente(Cliente* nuevoCliente) { 
-		cliente = nuevoCliente; 
-	}
-
-	void setCancha(Cancha* nuevaCancha) { 
-		cancha = nuevaCancha; 
-	}
-
-	void setNumeroFranja(int nuevaFranja) { 
-		numeroFranja = nuevaFranja; 
-	}
-
-	void setFecha(string nuevaFecha) { 
-		fecha = nuevaFecha; 
-	}
+	//Setters
+	void setId(int nuevoId);
+	void setCliente(Cliente* nuevoCliente);
+	void setCancha(Cancha* nuevaCancha);
+	void setFranjaInicial(int nuevaFranja);
+	void setCantidadFranjas(int nuevaCantidad);
+	void setFecha(string nuevaFecha);
+	void setMonto(double nuevoMonto);
 
 	//Metodos de clase
-	void mostrarInfo() const {
-		cout << "====DATOS DE LA RESERVA =====" << endl;
-		cout << "ID: " << ID << endl;
-		cout << "Cliente: " << cliente->getNombre() << endl;
-		cout << "Cancha: " << cancha->getNombre() << endl;
-		cout << "Numero de Franja: " << numeroFranja << endl;
-		cout << "Fecha: " << fecha << endl;
-	}
-};
 
+	// Marca la reserva como cancelada. No borra la reserva, solo cambia su estado.
+	// (Devolver las franjas a "Libre" en la Cancha es responsabilidad de quien
+	// gestiona la reserva -> ver GestorReservas::cancelar)
+	void cancelar();
+
+	void mostrarInfo() const;
+};

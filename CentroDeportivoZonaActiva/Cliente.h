@@ -1,45 +1,37 @@
+/*Universidad nacional
+María Emilia Gamboa Abarca
+Clase para representar a un cliente del centro deportivo*/
+
 #pragma once
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-class Cliente{
-	//Atributos: int id, string nombre, string telefono string correo
+class Cliente {
 private:
 	int id;
 	string nombre;
 	string telefono;
 	string correo;
+
 public:
 	//Constructores
-	Cliente() : id(0), nombre(""), telefono(""), correo(""){}
-	Cliente(int id, string nombre, string telefono, string correo) : id(id), nombre(nombre), telefono(telefono), correo(correo) {
-		this->id = id;
-		this->nombre = nombre;
-		this->telefono = telefono;
-		this->correo = correo;
-	}
+	Cliente();
+	Cliente(int id, string nombre, string telefono, string correo);
+
+	//Getters
+	int getID() const;
+	string getNombre() const;
+	string getTelefono() const;
+	string getCorreo() const;
+
+	//Setters
+	void setID(int nuevoID);
+	void setNombre(string nuevoNombre);
+	void setTelefono(string nuevoTelefono);
+	void setCorreo(string nuevoCorreo);
+
 	//Metodos de clase
-	//Getter
-	int getID() const { return id; }
-	string getNombre() const { return nombre; }
-	string getTelefono() const { return telefono; }
-	string getCorreo() const { return correo; }
-	//Setter
-	void setID(int nuevoID) { id = nuevoID;}
-	void setNombre(string nuevoNombre) { nombre = nuevoNombre; }
-	void setTelefono(string nuevoTelefono) { telefono = nuevoTelefono; }
-	void setCorreo(string nuevoCorreo) { correo = nuevoCorreo; }
-
-	void mostrarInfo() const {
-		cout << "====DATOS DEL CLIENTE =====" << endl;
-		cout << "ID: " << id << endl;
-		cout << "Nombre: " << getNombre() << endl;
-		cout << "Telefono: " << getTelefono() << endl;
-		cout << "Correo: " << getCorreo() << endl;
-
-	}
-
+	void mostrarInfo() const;
 };
-
