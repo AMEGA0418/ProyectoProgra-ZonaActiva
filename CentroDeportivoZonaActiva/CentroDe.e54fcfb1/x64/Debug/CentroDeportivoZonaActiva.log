@@ -1,14 +1,7 @@
-﻿  Cancha.cpp
-  CentroDeportivoZonaActiva.cpp
-  Cliente.cpp
-  FranjaHoraria.cpp
-  GestorCanchas.cpp
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\GestorCanchas.h(12,21): error C1075: "{": no se encontró ningún token coincidente
-  (compilando archivo de origen "GestorCanchas.cpp")
-  
+﻿  GestorCanchas.cpp
   GestorClientes.cpp
-  GestorReservas.cpp
   ListaEspera.cpp
+  Reportes.cpp
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\ListaEspera.h(57,16): error C2061: error de sintaxis: identificador 'GestorReservas'
   (compilando archivo de origen "ListaEspera.cpp")
   
@@ -17,41 +10,10 @@ C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDepor
       C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\ListaEspera.h(25,6):
       vea la declaración de 'ListaEspera::getCantidad'
   
-  Reportes.cpp
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Cliente.h(5,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "Reportes.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Cliente.h(5,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "Reportes.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reserva.h(7,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "Reportes.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reserva.h(7,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "Reportes.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\GestorReservas.h(6,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "Reportes.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\GestorReservas.h(6,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "Reportes.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\listaEspera.h(7,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "Reportes.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\listaEspera.h(7,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "Reportes.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\listaEspera.h(89,6): error C2535: 'int GestorCanchas::ListaEspera::getCantidad(void)': función miembro ya definida o declarada
+C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\listaEspera.h(89,6): error C2535: 'int ListaEspera::getCantidad(void)': función miembro ya definida o declarada
   (compilando archivo de origen "Reportes.cpp")
       C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\listaEspera.h(25,6):
-      vea la declaración de 'GestorCanchas::ListaEspera::getCantidad'
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reportes.h(7,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "Reportes.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reportes.h(7,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "Reportes.cpp")
+      vea la declaración de 'ListaEspera::getCantidad'
   
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reportes.h(35,33): error C2061: error de sintaxis: identificador 'GestorClientes'
   (compilando archivo de origen "Reportes.cpp")
@@ -64,46 +26,10 @@ C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDepor
   
   Reserva.cpp
   SistemaZonaActiva.cpp
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Cliente.h(5,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Cliente.h(5,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\GestorClientes.h(6,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\GestorClientes.h(6,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reserva.h(7,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reserva.h(7,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\GestorReservas.h(6,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\GestorReservas.h(6,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\ListaEspera.h(7,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\ListaEspera.h(7,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\ListaEspera.h(89,6): error C2535: 'int GestorCanchas::ListaEspera::getCantidad(void)': función miembro ya definida o declarada
+C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\ListaEspera.h(89,6): error C2535: 'int ListaEspera::getCantidad(void)': función miembro ya definida o declarada
   (compilando archivo de origen "SistemaZonaActiva.cpp")
       C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\ListaEspera.h(25,6):
-      vea la declaración de 'GestorCanchas::ListaEspera::getCantidad'
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reportes.h(7,1): error C2059: error de sintaxis: 'using namespace'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
-  
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reportes.h(7,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "SistemaZonaActiva.cpp")
+      vea la declaración de 'ListaEspera::getCantidad'
   
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reportes.h(43,40): error C2187: error de sintaxis: ")" inesperado aquí
   (compilando archivo de origen "SistemaZonaActiva.cpp")
@@ -114,21 +40,21 @@ C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDepor
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.h(16,20): error C2238: símbolos (token) inesperados delante de ';'
   (compilando archivo de origen "SistemaZonaActiva.cpp")
   
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(9,20): error C3254: 'GestorCanchas::Reportes': la clase contiene la invalidación explícita '{ctor}', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(9,20): error C3254: 'Reportes': la clase contiene la invalidación explícita '{ctor}', pero no deriva de una interfaz que contiene la declaración de función
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(9,20): error C2838: '{ctor}': nombre completo no válido en la declaración de miembro
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(18,21): error C3254: 'GestorCanchas::Reportes': la clase contiene la invalidación explícita '{dtor}', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(18,21): error C3254: 'Reportes': la clase contiene la invalidación explícita '{dtor}', pero no deriva de una interfaz que contiene la declaración de función
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(18,21): error C2838: '{dtor}': nombre completo no válido en la declaración de miembro
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(26,25): error C3254: 'GestorCanchas::Reportes': la clase contiene la invalidación explícita 'iniciar', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(26,25): error C3254: 'Reportes': la clase contiene la invalidación explícita 'iniciar', pero no deriva de una interfaz que contiene la declaración de función
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(26,25): error C2838: 'iniciar': nombre completo no válido en la declaración de miembro
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(36,25): error C3254: 'GestorCanchas::Reportes': la clase contiene la invalidación explícita 'menuPrincipal', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(36,25): error C3254: 'Reportes': la clase contiene la invalidación explícita 'menuPrincipal', pero no deriva de una interfaz que contiene la declaración de función
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(36,25): error C2838: 'menuPrincipal': nombre completo no válido en la declaración de miembro
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(72,25): error C3254: 'GestorCanchas::Reportes': la clase contiene la invalidación explícita 'menuCanchas', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(72,25): error C3254: 'Reportes': la clase contiene la invalidación explícita 'menuCanchas', pero no deriva de una interfaz que contiene la declaración de función
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(72,25): error C2838: 'menuCanchas': nombre completo no válido en la declaración de miembro
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(176,25): error C3254: 'GestorCanchas::Reportes': la clase contiene la invalidación explícita 'menuClientes', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(176,25): error C3254: 'Reportes': la clase contiene la invalidación explícita 'menuClientes', pero no deriva de una interfaz que contiene la declaración de función
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(176,25): error C2838: 'menuClientes': nombre completo no válido en la declaración de miembro
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(266,25): error C3254: 'GestorCanchas::Reportes': la clase contiene la invalidación explícita 'menuReservas', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(266,25): error C3254: 'Reportes': la clase contiene la invalidación explícita 'menuReservas', pero no deriva de una interfaz que contiene la declaración de función
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(266,25): error C2838: 'menuReservas': nombre completo no válido en la declaración de miembro
-C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(270,25): error C3254: 'GestorCanchas::Reportes': la clase contiene la invalidación explícita 'menuReportes', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(270,25): error C3254: 'Reportes': la clase contiene la invalidación explícita 'menuReportes', pero no deriva de una interfaz que contiene la declaración de función
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\SistemaZonaActiva.cpp(270,25): error C2838: 'menuReportes': nombre completo no válido en la declaración de miembro
 C:\Users\USUARIO\OneDrive\Documents\GitHub\ProyectoProgra-ZonaActiva\CentroDeportivoZonaActiva\Reportes.h(9,16): error C1075: "{": no se encontró ningún token coincidente
   (compilando archivo de origen "SistemaZonaActiva.cpp")
