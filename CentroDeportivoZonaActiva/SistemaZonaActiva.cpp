@@ -1,4 +1,5 @@
 #include "SistemaZonaActiva.h"
+#include <cstdlib> //para limpiar la pantalla con system("cls") o system("clear")
 //Universidad Nacional de Costa Rica 
 //Fecha: 17/09/26
 //Samuel Morera Trigueros  
@@ -25,11 +26,15 @@ SistemaZonaActiva::~SistemaZonaActiva() {
 
 // ---------------- Utilidades de interfaz ----------------
 
-// No se usan llamadas al sistema operativo ni otras librerias para limpiar
-// la consola. En su lugar, cada menu se separa con una sola linea en blanco
-// para que el contenido nuevo empiece justo debajo, sin dejar tanto espacio.
+// Limpia realmente la consola antes de mostrar cada menu, para que la
+// interfaz se vea ordenada y no se acumule el historial de pantallas
+// anteriores. cls en Windows, clear en Linux/Mac.
 void SistemaZonaActiva::limpiarPantalla() const {
-    cout << endl;
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
 }
 
 void SistemaZonaActiva::pausa() const {
