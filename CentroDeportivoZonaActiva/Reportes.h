@@ -1,9 +1,10 @@
 #pragma once
 #include<iostream>
 #include<string>
-#include"GestorCanchas.h"
-#include"GestorReservas.h"
-#include"listaEspera.h"
+#include "GestorCanchas.h"
+#include "GestorClientes.h"
+#include "GestorReservas.h"
+#include "ListaEspera.h"
 using namespace std;
 
 class Reportes {
@@ -11,90 +12,24 @@ class Reportes {
 	// servir como base para otras clases que generen reportes específicos.
 public:
 	// Constructor
-	// este metodo muestra el reporte de las canchas ocupadas
-	void GenerarOcupacion(GestorCanchas* gestorCanchas) {
-		int ocupacion = 0;
+	Reportes();
+	//Metodos
+    void canchaConMasReservas(GestorCanchas* gestorCanchas,
+        GestorReservas* gestorReservas) const;
 
-		for (int i = 0; i < gestorCanchas->getCantidad(); i++) {
+    // 2. Cliente con mayor cantidad de reservas activas (con detalle)
+    void clienteConMasReservas(GestorClientes* gestorClientes,
+        GestorReservas* gestorReservas) const;
 
-			Cancha* cancha = gestorCanchas->getCancha(i);
+    // 3. Ingreso total generado por las reservas activas (con detalle)
+    void ingresoTotal(GestorReservas* gestorReservas) const;
 
-			for (int j = 0; j < 12; j++) {
+    // 4. Porcentaje de ocupacion de cada cancha (con detalle)
+    void porcentajeOcupacion(GestorCanchas* gestorCanchas) const;
 
-				FranjaHoraria franja = cancha->getEstadoFranja(j);
+    // 5. Horas con mayor y menor cantidad de reservas (con detalle)
+    void horasMayorMenorDemanda(GestorReservas* gestorReservas) const;
 
-				if (franja.getEstado() == "O") {
-					ocupacion++;
-				}
-			}
-		}
-
-		cout << "Franjas ocupadas: " << ocupacion << endl;
-	}
-
-	void GenerarReservasPorCliente(GestorClientes* gestorClientes, GestorReservas* gestorReservas) {
-
-		cout << "----RESERVAS POR CLIENTE----" << endl;
-
-		if (gestorClientes == nullptr) {
-			cout << "No hay gestor de clientes" << endl;
-			return;
-	}
-		if gestorClientes->getCantidad() == 0) {
-			cout << "No hay clientes registrados" << endl;
-			return;
-	}
-	for (int i = 0; i < gestorClientes->getCantidad(); i++) {
-
-		Cliente* cliente = gestorClientes->getCliente(i);
-
-		if (cliente != nullptr) {
-			cout << endl;
-			cout << "Cliente: " << cliente->getNombre() << endl;
-			cout << "ID: " << cliente->getId() << endl;
-			cout << "Reservas:" << endl;
-
-			gestorReservas->listarPorCliente(cliente->getId());
-
-			cout << "-------------------------" << endl;
-		}
-	}
-
-	void GenerarResumenDiario(GestorReservas* gestorReservas) {
-
-		cout << "----RESUMEN DIARIO DE RESERVAS----" << endl;
-
-		if (gestorReservas == nullptr) {
-			cout << "No hay gestor de reservas" << endl;
-			return;
-		}
-		int cantidadReservas = gestorReservas->getCantidad();
-
-		cout << "Cantidad de reservas para hoy: " << cantidadReservas << endl;
-
-		if (cantidadReservas == 0) {
-			cout << "No hay canchas reservadas" << endl;
-
-		}
-	}
-	
-
-	void GenerarListaEspera(ListaEspera* listaEspera) {
-		cout << "----LISTA DE ESPERA----" << endl;
-		if (listaEspera == nullptr) {
-			cout << "No hay lista de espera" << endl;
-			return;
-		}
-		int cantidadEspera = listaEspera->getCantidad();
-		cout << "Cantidad de clientes en lista de espera: " << cantidadEspera << endl;
-
-		if (cantidadEspera == 0) {
-			cout << "No hay clientes en lista de espera" << endl;
-			return;
-		}
-		listaEspera->Mostrar();
-	}
-	
-
+    // Reporte adicional de apoyo: estado del listado de espera
+    void resumenListaEspera(ListaEspera* listaEspera) const;
 };
-

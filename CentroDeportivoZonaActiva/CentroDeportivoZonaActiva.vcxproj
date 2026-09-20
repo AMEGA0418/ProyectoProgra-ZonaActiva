@@ -147,6 +147,7 @@
     <ClCompile Include="GestorClientes.cpp" />
     <ClCompile Include="GestorReservas.cpp" />
     <ClCompile Include="ListaEspera.cpp" />
+    <ClCompile Include="RegistroEspera.cpp" />
     <ClCompile Include="Reportes.cpp" />
     <ClCompile Include="Reserva.cpp" />
     <ClCompile Include="SistemaZonaActiva.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="GestorClientes.h" />
     <ClInclude Include="GestorReservas.h" />
     <ClInclude Include="ListaEspera.h" />
+    <ClInclude Include="RegistroEspera.h" />
     <ClInclude Include="Reportes.h" />
     <ClInclude Include="Reserva.h" />
     <ClInclude Include="SistemaZonaActiva.h" />

@@ -10,89 +10,31 @@
 using namespace std;
 
 class GestorCanchas {
+public:
+    static const int MAX_CANCHAS = 10;
+
 private:
-    Cancha* canchas[10];
+    Cancha** canchas;   // arreglo unidimensional dinamico de punteros a Cancha
     int total;
 
 public:
     // Constructor
-    GestorCanchas() {
-        total = 0;
-        for (int i = 0; i < 10; i++) {
-            canchas[i] = nullptr;
-        }
-    }
+    GestorCanchas();
+    ~GestorCanchas();
 
-    // Encapsulador
-    int getCantidad() {
-        return total;
-    }
-
+    // Encapsuladores
+    int getCantidad() const;
+    bool estaLlena() const;
+    bool existeCodigo(int codigo) const;
+    // Gestion de canchas
+    bool agregar(Cancha* nuevaCancha);
+    bool eliminar(int codigo);
+    Cancha* buscar(int codigo) const;
+    Cancha* getCancha(int indice) const;
     // Metodos
-
-    // Agregar una cancha (mientras haya espacio)
-    bool agregar(Cancha* nuevaCancha) {
-        if (total < 10) {
-            canchas[total] = nuevaCancha;
-            total++;
-            return true;
-        }
-        return false; // ya no hay espacio
-    }
-
-    // Eliminar una cancha por posicion
-    bool eliminar(int indice) {
-        if (indice < 0 || indice >= total) {
-            return false; // indice invalido
-        }
-        delete canchas[indice]; // libera la memoria del puntero
-
-        // Recorremos el resto para "correr" el hueco
-        for (int i = indice; i < total - 1; i++) {
-            canchas[i] = canchas[i + 1];
-        }
-        canchas[total - 1] = nullptr;
-        total--;
-        return true;
-    }
-
-    // Buscar una cancha por su codigo/id
-    Cancha* buscar(int id) {
-        for (int i = 0; i < total; i++) {
-            if (canchas[i]->getId() == id) {
-                return canchas[i];
-            }
-        }
-        return nullptr; // no encontrada
-    }
-
-    // Listar todas las canchas registradas
-    void listar() {
-        if (total == 0) {
-            cout << "No hay canchas registradas." << endl;
-            return;
-        }
-        for (int i = 0; i < total; i++) {
-            cout << "Codigo: " << canchas[i]->getId()
-                << " | Nombre: " << canchas[i]->getNombre()
-                << " | Deporte: " << canchas[i]->getDeporte() << endl;
-        }
-    }
-
-    // Poner una franja de una cancha en Mantenimiento
-    void setMantenimiento(int idCancha, int indiceFranja) {
-        Cancha* c = buscar(idCancha);
-        if (c != nullptr) {
-            c->setEstadoFranja(indiceFranja, "M");
-        }
-        else {
-            cout << "Cancha no encontrada." << endl;
-        }
-    } 
-    Cancha* getCancha(int indice) {
-        if (indice >= 0 && indice < total) {
-            return canchas[indice];
-        }
-        return nullptr;
-    }
+    bool modificarPrecio(int codigo, double nuevoPrecio);
+    bool ponerMantenimiento(int codigo, int indiceFranja);
+    bool quitarMantenimiento(int codigo, int indiceFranja);
+    void listar() const;
+    bool mostrarDisponibilidad(int codigo) const;
 };

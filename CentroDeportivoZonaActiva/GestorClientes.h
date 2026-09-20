@@ -11,8 +11,11 @@ Clase coleccion que administra los clientes del sistema
 using namespace std;
 
 class GestorClientes {
+public:
+	static const int MAX_CLIENTES = 100;
+
 private:
-	Cliente* clientes[100];
+	Cliente* clientes[MAX_CLIENTES];   // arreglo unidimensional de punteros
 	int total;
 
 public:
@@ -23,17 +26,20 @@ public:
 	//Metodos de clase
 
 	// Agrega un cliente si hay espacio y su ID no esta duplicado.
-	bool agregar(Cliente* nuevoCliente);
+	bool agregar(Cliente* nuevoCliente); // false si esta lleno o el ID se repite
 
 	// Elimina un cliente por posicion en el arreglo
 	bool eliminar(int indice);
 
 	// Busca un cliente por su ID (no por posicion)
-	Cliente* buscar(int id) const;
+	Cliente* buscar(int id) const; 
+
+	Cliente* getCliente(int indice) const;
+	int getCantidad() const;
+	bool estaLleno() const;
+	bool existeID(int id) const;
 
 	void listar() const;
 
-	int getCantidad() const;
-	Cliente* getCliente(int indice) const;
 };
 

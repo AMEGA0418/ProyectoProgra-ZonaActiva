@@ -13,33 +13,23 @@ class FranjaHoraria {
 	//Atributos
 private:
 	int numero;
-	string estado;
+	char estado;
 	//Constructor
 public:
-	FranjaHoraria() {
-		numero = 0;
-		estado = "L";
-	}
-	FranjaHoraria(int numero, string estado) {
-		this->numero = numero;
-		this->estado = estado;
-	}
+	// Constructores
+	FranjaHoraria();
+	FranjaHoraria(int numero, char estado);
 	//Encapsuladores
-	int getNumero() {
-		return numero;
-	}
-	void setNumero(int nuevoNumero) {
-		numero = nuevoNumero;
-	}
-	string getEstado() {
-		return estado;
-	}
-	void setEstado(string nuevoEstado) {
-		estado = nuevoEstado;
-	}
+	int getNumero() const;
+	void setNumero(int nuevoNumero);
+	char getEstado() const;
+	bool setEstado(char nuevoEstado);   // false si el caracter no es L, O o M
 	//Métodos
-	bool estaLibre() {
-		return estado == "L";
-	}
+	bool estaLibre() const;
+	bool estaOcupada() const;
+	bool enMantenimiento() const;
+	int getHoraInicio() const;         // franja 0 -> 8, franja 11 -> 19
+	int getHoraFin() const;            // franja 0 -> 9, franja 11 -> 20
+	string getRangoHora() const;   // "08:00 - 09:00"
+	string getEstadoTexto() const; // "Libre", "Ocupada", "Mantenimiento"
 };
-

@@ -10,8 +10,8 @@ using namespace std;
 
 class Cliente {
 private:
-	int id;
-	string nombre;
+	int id; // numero de identificacion (unico)
+	string nombre; // nombre completo
 	string telefono;
 	string correo;
 
@@ -34,4 +34,5 @@ public:
 
 	//Metodos de clase
 	void mostrarInfo() const;
+	void mostrarLinea() const;   // version corta para listados
 };

@@ -29,3 +29,9 @@ void Cliente::mostrarInfo() const {
 	cout << "Telefono: " << telefono << endl;
 	cout << "Correo: " << correo << endl;
 }
+void Cliente::mostrarLinea() const {
+	cout << "ID: " << id
+		<< " | Nombre: " << nombre
+		<< " | Telefono: " << telefono
+		<< " | Correo: " << correo << endl;
+}

@@ -7,84 +7,59 @@
 #include <iostream>
 #include <string>
 #include"FranjaHoraria.h"
+
 using namespace std;
 
 class Cancha {
-	//Atributos
+public:
+	static const int TOTAL_FRANJAS = 12;
+
 private:
-	int id;
+	int codigo;       // codigo unico de la cancha
 	string nombre;
 	string deporte;
-	FranjaHoraria franjas[12];
-	//Constructores
+	double precioHora;   // precio de alquiler por hora
+	FranjaHoraria franjas[TOTAL_FRANJAS];  // arreglo unidimensional de 12 posiciones
+
 public:
-	Cancha() {
-		id = 0;
-		nombre = "";
-		deporte = "";
-		for (int i = 0;i < 12;i++) {
-			franjas[i] = FranjaHoraria(i, "L");
-		}
-	}
-	Cancha(int id, string nombre, string deporte) {
-		this->id = id;
-		this->nombre = nombre;
-		this->deporte = deporte;
-		for (int i = 0; i < 12; i++) {
-			franjas[i] = FranjaHoraria(i, "L");
-		}
-	}
-	//Encapsuladores
+    // Constructores
+    Cancha();
+    Cancha(int codigo, string nombre, string deporte, double precioHora);
 
-	int getId() {
-		return id;
-	}
-	void setId(int nuevoId) {
-		id = nuevoId;
-	}
-	string getNombre() {
-		return nombre;
-	}
-	void setNombre(string nuevoNombre) {
-		nombre = nuevoNombre;
-	}
-	string getDeporte() {
-		return deporte;
-	}
-	void setDeporte(string nuevoDeporte) {
-		deporte = nuevoDeporte;
-	}
-	FranjaHoraria getEstadoFranja(int indice) {
-		return franjas[indice];
-	}
-	void setEstadoFranja(int indice, string nuevoEstado) {
-		if (indice >= 0 && indice < 12) {
-			franjas[indice].setEstado(nuevoEstado);
-		}
-	}
+    // Getters y setters
+    int getCodigo() const;
+    void setCodigo(int nuevoCodigo);
+    string getNombre() const;
+    void setNombre(string nuevoNombre);
+    string getDeporte() const;
+    void setDeporte(string nuevoDeporte);
+    double getPrecioHora() const;
+    bool setPrecioHora(double nuevoPrecio);   // false si el precio es negativo
 
-	//Métodos
-	void mostrarDisponibilidad() {
-		cout << "Disponibilidad de la cancha " << nombre << ":" << endl;
-		cout << "----------------------------------------" << endl;
+    // Manejo del arreglo de franjas
+    bool indiceValido(int indice) const;
+    FranjaHoraria getFranja(int indice) const;
+    char          getEstadoFranja(int indice) const; // ' ' si el indice es invalido
+    bool setEstadoFranja(int indice, char estado);
 
-		for (int i = 0; i < 12; i++) {
-			int hora = 8 + i; // franja 0 = 08:00, franja 11 = 19:00
-			string estadoTexto;
+    // Consultas sobre rangos de franjas consecutivas
+    bool rangoValido(int franjaInicial, int cantidad) const;
+    bool rangoLibre(int franjaInicial, int cantidad) const;
+    int primeraFranjaNoLibre(int franjaInicial, int cantidad) const; // -1 si todas libres
 
-			if (franjas[i].getEstado() == "L") {
-				estadoTexto = "Libre";
-			}
-			else if (franjas[i].getEstado() == "O") {
-				estadoTexto = "Ocupada";
-			}
-			else if (franjas[i].getEstado() == "M") {
-				estadoTexto = "Mantenimiento";
-			}
+    // Reservar / liberar un bloque de franjas consecutivas
+    bool ocuparRango(int franjaInicial, int cantidad);
+    bool liberarRango(int franjaInicial, int cantidad);
 
-			cout << hora << ":00 [" << i << "] -> "
-				<< franjas[i].getEstado() << " (" << estadoTexto << ")" << endl;
-		}
-	}
+    // Mantenimiento: no se puede poner M sobre una franja ocupada (O)
+    bool ponerMantenimiento(int indice);
+    bool quitarMantenimiento(int indice);   // devuelve la franja a Libre
+
+    // Estadisticas de la cancha
+    int contarFranjasPorEstado(char estado) const;
+    double porcentajeOcupacion() const;     // franjas ocupadas sobre 12, en porcentaje
+
+    // Salidas por consola
+    void mostrarInfo() const;
+    void mostrarDisponibilidad() const;
 };
-

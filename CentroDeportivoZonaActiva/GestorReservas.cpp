@@ -1,129 +1,143 @@
-#include <iostream>
 #include "GestorReservas.h"
 
 using namespace std;
 
-//Constructor y destructor
+// Definicion de la constante estatica de la clase
+const int GestorReservas::MAX_RESERVAS;
+
 GestorReservas::GestorReservas() {
-	total = 0;
-	for (int i = 0; i < 120; i++) reservas[i] = nullptr;
+    total = 0;
+    consecutivo = 0;
+    for (int i = 0; i < MAX_RESERVAS; i++) reservas[i] = nullptr;
 }
 
 GestorReservas::~GestorReservas() {
-	for (int i = 0; i < total; i++) {
-		delete reservas[i];
-	}
+    for (int i = 0; i < total; i++) {
+        delete reservas[i];
+        reservas[i] = nullptr;
+    }
 }
 
-//Metodos de clase
-bool GestorReservas::crear(Cliente* cliente, Cancha* cancha, int franjaInicial,
-	int cantidadFranjas, string fecha) {
+bool GestorReservas::estaLleno() const { return total >= MAX_RESERVAS; }
 
-	if (total >= 120) return false;
-	if (cliente == nullptr || cancha == nullptr) return false;
-	if (cantidadFranjas <= 0) return false;
-	if (franjaInicial < 0 || franjaInicial + cantidadFranjas > 12) return false;
+Reserva* GestorReservas::crear(Cliente* cliente, Cancha* cancha, int franjaInicial,
+    int cantidadFranjas, string fecha) {
+    if (estaLleno()) return nullptr;
+    if (cliente == nullptr || cancha == nullptr) return nullptr;
+    if (!cancha->rangoValido(franjaInicial, cantidadFranjas)) return nullptr;
+    if (!cancha->rangoLibre(franjaInicial, cantidadFranjas)) return nullptr;
 
-	// Verificar que todas las franjas solicitadas esten libres
-	for (int i = franjaInicial; i < franjaInicial + cantidadFranjas; i++) {
-		if (!cancha->getEstadoFranja(i).estaLibre()) {
-			return false; // al menos una franja no esta libre
-		}
-	}
+    // Cambio de disponibilidad L -> O
+    cancha->ocuparRango(franjaInicial, cantidadFranjas);
 
-	// Marcar las franjas como Ocupadas
-	for (int i = franjaInicial; i < franjaInicial + cantidadFranjas; i++) {
-		cancha->setEstadoFranja(i, "O");
-	}
-
-	double monto = cancha->getPrecio() * cantidadFranjas;
-	int id = total + 1;
-	reservas[total] = new Reserva(id, cliente, cancha, franjaInicial,
-		cantidadFranjas, fecha, monto);
-	total++;
-	return true;
+    double monto = cancha->getPrecioHora() * cantidadFranjas;
+    consecutivo++;
+    Reserva* nueva = new Reserva(consecutivo, cliente, cancha, franjaInicial,
+        cantidadFranjas, fecha, monto);
+    reservas[total] = nueva;
+    total++;
+    return nueva;
 }
 
 bool GestorReservas::cancelar(int numeroReserva) {
-	Reserva* r = buscar(numeroReserva);
-	if (r == nullptr) return false;
-	if (!r->estaActiva()) return false;
+    Reserva* r = buscar(numeroReserva);
+    if (r == nullptr) return false;
+    if (!r->estaActiva()) return false;   // solo se cancelan las activas
 
-	Cancha* cancha = r->getCancha();
-	if (cancha != nullptr) {
-		int inicio = r->getFranjaInicial();
-		int cantidad = r->getCantidadFranjas();
-		for (int i = inicio; i < inicio + cantidad; i++) {
-			cancha->setEstadoFranja(i, "L");
-		}
-	}
-
-	r->cancelar();
-	// Nota: aqui es el punto donde, en el modulo de Listado de Espera,
-	// se debe revisar si hay clientes esperando por esta cancha/franja
-	// para avisarles que ya quedo disponible.
-	return true;
+    Cancha* c = r->getCancha();
+    if (c != nullptr) {
+        // Cambio de disponibilidad O -> L
+        c->liberarRango(r->getFranjaInicial(), r->getCantidadFranjas());
+    }
+    r->cancelar();
+    return true;
 }
 
 Reserva* GestorReservas::buscar(int numeroReserva) const {
-	for (int i = 0; i < total; i++) {
-		if (reservas[i] != nullptr && reservas[i]->getId() == numeroReserva) {
-			return reservas[i];
-		}
-	}
-	return nullptr;
-}
-
-void GestorReservas::listarTodas() const {
-	if (total == 0) {
-		cout << "No hay reservas registradas." << endl;
-		return;
-	}
-	for (int i = 0; i < total; i++) {
-		if (reservas[i] != nullptr) {
-			reservas[i]->mostrarInfo();
-			cout << "-------------------------" << endl;
-		}
-	}
-}
-
-void GestorReservas::listarPorCliente(int idCliente) const {
-	bool encontro = false;
-	for (int i = 0; i < total; i++) {
-		if (reservas[i] == nullptr) continue;
-		Cliente* c = reservas[i]->getCliente();
-		if (c != nullptr && c->getID() == idCliente) {
-			reservas[i]->mostrarInfo();
-			encontro = true;
-		}
-	}
-	if (!encontro) {
-		cout << "El cliente no tiene reservas registradas." << endl;
-	}
-}
-
-void GestorReservas::listarPorCancha(int idCancha) const {
-	bool encontro = false;
-	for (int i = 0; i < total; i++) {
-		if (reservas[i] == nullptr) continue;
-		Cancha* c = reservas[i]->getCancha();
-		if (c != nullptr && c->getId() == idCancha) {
-			reservas[i]->mostrarInfo();
-			encontro = true;
-		}
-	}
-	if (!encontro) {
-		cout << "La cancha no tiene reservas registradas." << endl;
-	}
-}
-
-int GestorReservas::getCantidad() const {
-	return total;
+    for (int i = 0; i < total; i++) {
+        if (reservas[i] != nullptr && reservas[i]->getNumero() == numeroReserva) {
+            return reservas[i];
+        }
+    }
+    return nullptr;
 }
 
 Reserva* GestorReservas::getReserva(int indice) const {
-	if (indice >= 0 && indice < total) {
-		return reservas[indice];
-	}
-	return nullptr;
+    if (indice >= 0 && indice < total) return reservas[indice];
+    return nullptr;
+}
+
+int GestorReservas::getCantidad() const { return total; }
+
+int GestorReservas::contarActivasPorCancha(int codigoCancha) const {
+    int contador = 0;
+    for (int i = 0; i < total; i++) {
+        Reserva* r = reservas[i];
+        if (r == nullptr || !r->estaActiva() || r->getCancha() == nullptr) continue;
+        if (r->getCancha()->getCodigo() == codigoCancha) contador++;
+    }
+    return contador;
+}
+
+int GestorReservas::contarActivasPorCliente(int idCliente) const {
+    int contador = 0;
+    for (int i = 0; i < total; i++) {
+        Reserva* r = reservas[i];
+        if (r == nullptr || !r->estaActiva() || r->getCliente() == nullptr) continue;
+        if (r->getCliente()->getID() == idCliente) contador++;
+    }
+    return contador;
+}
+
+// Cuenta cuantas reservas activas usan una hora especifica (0 a 11)
+int GestorReservas::contarActivasEnFranja(int indiceFranja) const {
+    int contador = 0;
+    for (int i = 0; i < total; i++) {
+        Reserva* r = reservas[i];
+        if (r == nullptr || !r->estaActiva()) continue;
+        if (r->usaFranja(indiceFranja)) contador++;
+    }
+    return contador;
+}
+
+void GestorReservas::listarTodas() const {
+    if (total == 0) {
+        cout << "No hay reservas registradas." << endl;
+        return;
+    }
+    cout << "----- RESERVAS REGISTRADAS (" << total << ") -----" << endl;
+    for (int i = 0; i < total; i++) {
+        if (reservas[i] != nullptr) {
+            reservas[i]->mostrarInfo();
+            cout << "-------------------------------------------" << endl;
+        }
+    }
+}
+
+void GestorReservas::listarPorCliente(int idCliente) const {
+    bool encontro = false;
+    for (int i = 0; i < total; i++) {
+        Reserva* r = reservas[i];
+        if (r == nullptr || r->getCliente() == nullptr) continue;
+        if (r->getCliente()->getID() == idCliente) {
+            r->mostrarInfo();
+            cout << "-------------------------------------------" << endl;
+            encontro = true;
+        }
+    }
+    if (!encontro) cout << "El cliente no tiene reservas registradas." << endl;
+}
+
+void GestorReservas::listarPorCancha(int codigoCancha) const {
+    bool encontro = false;
+    for (int i = 0; i < total; i++) {
+        Reserva* r = reservas[i];
+        if (r == nullptr || r->getCancha() == nullptr) continue;
+        if (r->getCancha()->getCodigo() == codigoCancha) {
+            r->mostrarInfo();
+            cout << "-------------------------------------------" << endl;
+            encontro = true;
+        }
+    }
+    if (!encontro) cout << "La cancha no tiene reservas registradas." << endl;
 }

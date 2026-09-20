@@ -1,7 +1,7 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\mega0418\\documents\\maria emilia gamboa abarca\\programación\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\centrodeportivozonaactiva.cpp",
+        "Source": "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\centrodeportivozonaactiva.cpp",
         "ProvidedModule": "",
         "Includes": [
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\iostream",
@@ -128,7 +128,18 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\clocale",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\locale.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\ostream",
-            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string"
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\sistemazonaactiva.h",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\gestorcanchas.h",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\cancha.h",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\franjahoraria.h",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\gestorclientes.h",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\cliente.h",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\gestorreservas.h",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\reserva.h",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\listaespera.h",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\registroespera.h",
+            "c:\\users\\amega\\onedrive\\documentos\\github\\proyectoprogra-zonaactiva\\proyectoprogra-zonaactiva\\centrodeportivozonaactiva\\reportes.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
