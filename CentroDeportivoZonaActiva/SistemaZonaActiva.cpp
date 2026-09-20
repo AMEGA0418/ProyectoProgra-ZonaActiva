@@ -1,8 +1,10 @@
 #include "SistemaZonaActiva.h"
 #include <cstdlib> //para limpiar la pantalla con system("cls") o system("clear")
-//Universidad Nacional de Costa Rica 
-//Fecha: 17/09/26
-//Samuel Morera Trigueros  
+
+/*Universidad Nacional de Costa Rica
+Fecha: 17/09/26
+Samuel Morera Trigueros*/
+
 using namespace std;
 
 // ---------------- Constructor y destructor ----------------

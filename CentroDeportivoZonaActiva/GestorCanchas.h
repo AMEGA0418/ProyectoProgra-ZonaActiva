@@ -1,8 +1,7 @@
-// Universidad nacional
-//fecha:09/09/2026
-//Andrey David Arias Pérez
-//Clase para agregar, eliminar o buscar una cancha
-
+/*Universidad nacional 
+Fecha:09/09/2026 
+Andrey David Arias PérezClase para agregar, eliminar o buscar una cancha
+*/
 #pragma once
 #include <iostream>
 #include <string>

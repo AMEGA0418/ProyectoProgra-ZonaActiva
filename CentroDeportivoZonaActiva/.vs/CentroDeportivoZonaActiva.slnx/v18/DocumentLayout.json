@@ -3,52 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:SistemaZonaActiva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\CentroDeportivoZonaActiva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:CentroDeportivoZonaActiva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\FranjaHoraria.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:FranjaHoraria.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cancha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Cancha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorCanchas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:GestorCanchas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cliente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Cliente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\FranjaHoraria.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:FranjaHoraria.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\CentroDeportivoZonaActiva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:CentroDeportivoZonaActiva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorCanchas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:GestorCanchas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:SistemaZonaActiva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorClientes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:GestorClientes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorReservas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:GestorReservas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:ListaEspera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:ListaEspera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\RegistroEspera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:RegistroEspera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reportes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Reportes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reserva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Reserva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:SistemaZonaActiva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:SistemaZonaActiva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reserva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Reserva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\RegistroEspera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:RegistroEspera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reportes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Reportes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:ListaEspera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reportes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Reportes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorReservas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:GestorReservas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorClientes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:GestorClientes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorCanchas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:GestorCanchas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\FranjaHoraria.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:FranjaHoraria.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cliente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Cliente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cancha.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E54FCFB1-3AA0-4D62-A28F-CD206B9861BB}|CentroDeportivoZonaActiva.vcxproj|solutionrelative:Cancha.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,27 +106,94 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GestorCanchas.h",
-              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorCanchas.h",
-              "RelativeDocumentMoniker": "GestorCanchas.h",
-              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorCanchas.h",
-              "RelativeToolTip": "GestorCanchas.h",
-              "ViewState": "AgIAABQAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-20T00:13:30.961Z"
+              "DocumentIndex": 1,
+              "Title": "Cancha.cpp",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cancha.cpp",
+              "RelativeDocumentMoniker": "Cancha.cpp",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cancha.cpp",
+              "RelativeToolTip": "Cancha.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-20T01:31:30.334Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FranjaHoraria.h",
-              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\FranjaHoraria.h",
-              "RelativeDocumentMoniker": "FranjaHoraria.h",
-              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\FranjaHoraria.h",
-              "RelativeToolTip": "FranjaHoraria.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-20T00:13:25.89Z"
+              "DocumentIndex": 2,
+              "Title": "Cliente.cpp",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cliente.cpp",
+              "RelativeDocumentMoniker": "Cliente.cpp",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cliente.cpp",
+              "RelativeToolTip": "Cliente.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-20T01:31:24.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GestorCanchas.cpp",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorCanchas.cpp",
+              "RelativeDocumentMoniker": "GestorCanchas.cpp",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorCanchas.cpp",
+              "RelativeToolTip": "GestorCanchas.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-20T01:31:18.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GestorClientes.cpp",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorClientes.cpp",
+              "RelativeDocumentMoniker": "GestorClientes.cpp",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorClientes.cpp",
+              "RelativeToolTip": "GestorClientes.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-20T01:31:16.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CentroDeportivoZonaActiva.cpp",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\CentroDeportivoZonaActiva.cpp",
+              "RelativeDocumentMoniker": "CentroDeportivoZonaActiva.cpp",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\CentroDeportivoZonaActiva.cpp",
+              "RelativeToolTip": "CentroDeportivoZonaActiva.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-20T01:30:21.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GestorReservas.cpp",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorReservas.cpp",
+              "RelativeDocumentMoniker": "GestorReservas.cpp",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorReservas.cpp",
+              "RelativeToolTip": "GestorReservas.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-20T01:31:15.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListaEspera.cpp",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.cpp",
+              "RelativeDocumentMoniker": "ListaEspera.cpp",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.cpp",
+              "RelativeToolTip": "ListaEspera.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-20T01:31:12.888Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -96,70 +203,10 @@
               "RelativeDocumentMoniker": "FranjaHoraria.cpp",
               "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\FranjaHoraria.cpp",
               "RelativeToolTip": "FranjaHoraria.cpp",
-              "ViewState": "AgIAAC4AAAAAAAAAAADwvzoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-20T00:11:55.191Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CentroDeportivoZonaActiva.cpp",
-              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\CentroDeportivoZonaActiva.cpp",
-              "RelativeDocumentMoniker": "CentroDeportivoZonaActiva.cpp",
-              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\CentroDeportivoZonaActiva.cpp",
-              "RelativeToolTip": "CentroDeportivoZonaActiva.cpp",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAiwAoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-20T00:10:57.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SistemaZonaActiva.cpp",
-              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.cpp",
-              "RelativeDocumentMoniker": "SistemaZonaActiva.cpp",
-              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.cpp",
-              "RelativeToolTip": "SistemaZonaActiva.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-20T00:07:05.116Z",
+              "WhenOpened": "2026-09-20T00:11:55.191Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SistemaZonaActiva.h",
-              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.h",
-              "RelativeDocumentMoniker": "SistemaZonaActiva.h",
-              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.h",
-              "RelativeToolTip": "SistemaZonaActiva.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-20T00:05:45.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ListaEspera.cpp",
-              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.cpp",
-              "RelativeDocumentMoniker": "ListaEspera.cpp",
-              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.cpp",
-              "RelativeToolTip": "ListaEspera.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-20T00:05:31.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ListaEspera.h",
-              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.h",
-              "RelativeDocumentMoniker": "ListaEspera.h",
-              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.h",
-              "RelativeToolTip": "ListaEspera.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-20T00:05:08.81Z"
             },
             {
               "$type": "Document",
@@ -169,45 +216,179 @@
               "RelativeDocumentMoniker": "RegistroEspera.cpp",
               "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\RegistroEspera.cpp",
               "RelativeToolTip": "RegistroEspera.cpp",
-              "ViewState": "AgIAABkAAAAAAAAAAAAIwCsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-20T00:04:44.703Z"
+              "WhenOpened": "2026-09-20T01:31:05.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "RegistroEspera.h",
-              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\RegistroEspera.h",
-              "RelativeDocumentMoniker": "RegistroEspera.h",
-              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\RegistroEspera.h",
-              "RelativeToolTip": "RegistroEspera.h",
-              "ViewState": "AgIAABEAAAAAAAAAAAAIwCMAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-20T00:04:26.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "Reportes.cpp",
               "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reportes.cpp",
               "RelativeDocumentMoniker": "Reportes.cpp",
               "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reportes.cpp",
               "RelativeToolTip": "Reportes.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-20T00:01:26.942Z"
+              "WhenOpened": "2026-09-20T01:31:02.925Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Reportes.h",
-              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reportes.h",
-              "RelativeDocumentMoniker": "Reportes.h",
-              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reportes.h",
-              "RelativeToolTip": "Reportes.h",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAACIAAAACAAAAAAAAAA==",
+              "Title": "Reserva.cpp",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reserva.cpp",
+              "RelativeDocumentMoniker": "Reserva.cpp",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reserva.cpp",
+              "RelativeToolTip": "Reserva.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-20T01:31:01.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SistemaZonaActiva.cpp",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.cpp",
+              "RelativeDocumentMoniker": "SistemaZonaActiva.cpp",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.cpp",
+              "RelativeToolTip": "SistemaZonaActiva.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-20T01:30:34.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SistemaZonaActiva.h",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.h",
+              "RelativeDocumentMoniker": "SistemaZonaActiva.h",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\SistemaZonaActiva.h",
+              "RelativeToolTip": "SistemaZonaActiva.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-20T00:00:03.838Z"
+              "WhenOpened": "2026-09-20T01:30:02.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Reserva.h",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reserva.h",
+              "RelativeDocumentMoniker": "Reserva.h",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Reserva.h",
+              "RelativeToolTip": "Reserva.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-20T01:29:56.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegistroEspera.h",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\RegistroEspera.h",
+              "RelativeDocumentMoniker": "RegistroEspera.h",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\RegistroEspera.h",
+              "RelativeToolTip": "RegistroEspera.h",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-20T01:28:02.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ListaEspera.h",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.h",
+              "RelativeDocumentMoniker": "ListaEspera.h",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\ListaEspera.h",
+              "RelativeToolTip": "ListaEspera.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-20T01:27:59.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GestorReservas.h",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorReservas.h",
+              "RelativeDocumentMoniker": "GestorReservas.h",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorReservas.h",
+              "RelativeToolTip": "GestorReservas.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-20T01:27:57.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GestorClientes.h",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorClientes.h",
+              "RelativeDocumentMoniker": "GestorClientes.h",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorClientes.h",
+              "RelativeToolTip": "GestorClientes.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-20T01:27:55.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GestorCanchas.h",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorCanchas.h",
+              "RelativeDocumentMoniker": "GestorCanchas.h",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\GestorCanchas.h",
+              "RelativeToolTip": "GestorCanchas.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-20T01:26:31.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FranjaHoraria.h",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\FranjaHoraria.h",
+              "RelativeDocumentMoniker": "FranjaHoraria.h",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\FranjaHoraria.h",
+              "RelativeToolTip": "FranjaHoraria.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-20T00:13:25.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Cliente.h",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cliente.h",
+              "RelativeDocumentMoniker": "Cliente.h",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cliente.h",
+              "RelativeToolTip": "Cliente.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-20T01:25:52.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Cancha.h",
+              "DocumentMoniker": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cancha.h",
+              "RelativeDocumentMoniker": "Cancha.h",
+              "ToolTip": "C:\\Users\\amega\\OneDrive\\Documentos\\GitHub\\ProyectoProgra-ZonaActiva\\ProyectoProgra-ZonaActiva\\CentroDeportivoZonaActiva\\Cancha.h",
+              "RelativeToolTip": "Cancha.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-20T01:25:23.278Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,11 +1,9 @@
 #pragma once
 #include <iostream>
 #include <string>
-// Universidad nacional
-//fecha:17/09/2026
-//Andrey David Arias Pérez
-// Emilia 
-//Samuel Morera Trigueros
+/*Universidad nacional 
+Fecha:17/09/2026 
+Samuel Morera Trigueros*/
 #include "GestorCanchas.h"
 #include "GestorClientes.h"
 #include "GestorReservas.h"

@@ -1,8 +1,7 @@
-//Universidad nacional
-//fecha:07/09/2026
-//Andrey David Arias Pérez
-//Clase para crear la franja que representará la disponibilidad
-//o los horarios de la cancha
+/*Universidad nacional
+Fecha:07/09/2026
+Andrey David Arias Pérez
+Clase para crear la franja que representará la disponibilidad o los horarios de la cancha*/
 
 #pragma once
 #include <iostream>

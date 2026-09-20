@@ -1,7 +1,7 @@
-//Universidad nacional
-//fecha:07/09/2026
-//Andrey David Arias Pérez
-//Clase para crear como tal la cancha 
+/*Universidad nacional
+Fecha:07/09/2026
+Andrey David Arias Pérez
+Clase para crear como tal la cancha */
 
 #pragma once
 #include <iostream>

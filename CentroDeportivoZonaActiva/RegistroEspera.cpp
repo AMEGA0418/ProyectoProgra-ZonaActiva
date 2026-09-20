@@ -1,5 +1,4 @@
 #include "RegistroEspera.h"
-#include <iostream>
 
 using namespace std;
 
